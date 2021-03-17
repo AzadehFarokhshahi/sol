@@ -1,0 +1,36 @@
+<div class="card" style="padding: 100px 300px 200px 300px; border:none">
+    <h4 class="card-header">Login</h4>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="input">Your Answer</label>
+                <input type="text" formControlName="input" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.input.errors }" />
+                <div *ngIf="submitted && f.input.errors" class="invalid-feedback">
+                    <div *ngIf="f.input.errors.required">Username is required</div>
+                </div>
+            </div>
+            <div>
+            <button type="button" id="btnOUs" class="btn btn-primary" ng-click="levelOU()" style="padding:'10px'">3th minor </button>
+        
+        
+        <button type="button" id="btnchiefdom" class="btn btn-primary" ng-click="levelCD()">3th major</button>
+       
+        
+        <button type="button" id="btndistrict" class="btn btn-primary" ng-click="levelD()">4th perfect </button>
+       
+        
+        <button type="button" id="btnfaciltiy" class="btn btn-primary" ng-click="levelF()">5th perfect </button>
+
+        <button type="button" id="btnfaciltiy" class="btn btn-primary" ng-click="levelF()">octave </button>
+        
+            </div>
+            <div class="form-group">
+                <button [disabled]="loading" class="btn btn-primary">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Submit
+                </button>
+                
+            </div>
+        </form>
+    </div>
+</div>

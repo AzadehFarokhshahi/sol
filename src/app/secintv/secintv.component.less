@@ -1,0 +1,136 @@
+.sidebar-container {
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: black;
+    background-color: transparent;
+    font-family: URW Chancery L, cursive;
+    font-size: 13pt;
+    padding-top:50px;
+  }
+  
+  .content-container {
+    padding-top: 20px;
+  }
+  
+  .sidebar-logo {
+    padding: 10px 15px 10px 30px;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  
+  .sidebar-navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+    border:none;
+  }
+  
+  .sidebar-navigation li {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+  }
+  
+  .sidebar-navigation li a {
+    padding: 10px 15px 10px 30px;
+    display: block;
+    color: black;
+  }
+  
+  .sidebar-navigation li .fa {
+    margin-right: 10px;
+  }
+  
+  .sidebar-navigation li a:active,
+  .sidebar-navigation li a:hover,
+  .sidebar-navigation li a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .sidebar-navigation li::before {
+    background-color: #ebebeb;
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 3px;
+    z-index: -1;
+  }
+  
+  .sidebar-navigation li:hover::before {
+    width: 100%;
+    background-color:#ebebeb;
+  }
+  
+  .sidebar-navigation .header {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 10px 15px 10px 30px;
+  }
+  
+  .sidebar-navigation .header::before {
+    background-color: transparent;
+  }
+  
+  .content-container {
+    padding-left: 220px;
+  }
+
+  .header{
+      background-color: #284eb99e;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .btn{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    outline-color: transparent;
+  }
+  button {
+    outline: none;
+  }
+
+  #title{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+    color:#8d33aa;
+    text-decoration: underline;
+}
+
+#img{
+  width: 800px;
+}
+
+.container-fluid{
+  padding-left:110px;
+  padding-top:50px;
+}
+
+.row{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 25px;
+}

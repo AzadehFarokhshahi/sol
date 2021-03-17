@@ -1,0 +1,120 @@
+<div class="sidebar-container">
+  <div class="sidebar-logo" Style="font-size: 30px; padding-left: 10px;">
+    2nd Intervals
+  </div>
+  <ul class="sidebar-navigation">
+    <!--<li class="header">Navigation</li>-->
+    <li>
+      <button class="btn" (click)="selectAsce()">
+        <p>Lesson #1<i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #2 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #3 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #4 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #5 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #6 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #7 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #8 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #9 <i class="arrow right"></i></p>
+      </button>
+    </li>
+    <li>
+      <button class="btn" (click)="selectDesc()">
+        <p>Lesson #10 <i class="arrow right"></i></p>
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="content-container">
+  <div class="container-fluid">
+    <body *ngIf="asce">
+     <!----<h2 id="title">Ascending C Major</h2>-->
+      <div class="container">
+        <img src="../../assets/images/Scale.png" id="img">
+        <!---- <div id="boo" ></div>-->
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4" id="col1" Style="color:#e65bcf">
+            Goal
+          </div>
+          <div class="col-sm-4" id="col2">
+            <audio controls id="audio">
+              <source src="../../assets/Audio/1-1.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4" id="col1" Style="color:#e65bcf;;">
+            You can do this!
+          </div>
+          <div class="col-sm-4" id="col2">
+            <audio controls id="audio">
+              <source src="../../assets/Audio/1-2.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </body>
+    <body *ngIf="desc">
+     <!---- <h2 id="title">Descending C Major</h2>-->
+      <div class="container">
+        <img src="../../assets/images/1-2.png" id="img">
+        <!---- <div id="boo" ></div>-->
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4" id="col1" Style="color:#e65bcf">
+            Goal
+          </div>
+          <div class="col-sm-4" id="col2">
+            <audio controls id="audio">
+              <source src="../../assets/Audio/2-1.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4" id="col1" Style="color:#e65bcf;;">
+            You can do this!
+          </div>
+          <div class="col-sm-4" id="col2">
+            <audio controls id="audio">
+              <source src="../../assets/Audio/2-2.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </body>
+  </div>
+</div>
