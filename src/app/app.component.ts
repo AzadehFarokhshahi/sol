@@ -1,10 +1,10 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, Oninit } from '@angular/core';
 
 import { AccountService } from './_services';
 import { User } from './_models';
 
 @Component({ selector: 'app', templateUrl: 'index.html' })
-export class AppComponent {
+export class AppComponent implements OnInit{
     user: User;
 
     constructor(private accountService: AccountService) {
@@ -15,4 +15,6 @@ export class AppComponent {
     logout() {
         this.accountService.logout();
     }
+    ngOnInit(): void {
+  }
 }
